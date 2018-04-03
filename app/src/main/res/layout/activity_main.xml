@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ui.activity.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Sources" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_input1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onInputBtn_Click"
+            android:text="Input 1" />
+
+        <Button
+            android:id="@+id/btn_input2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onInputBtn_Click"
+            android:text="Input 2" />
+
+        <Button
+            android:id="@+id/btn_input3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onInputBtn_Click"
+            android:text="Input 3" />
+
+        <Button
+            android:id="@+id/btn_input4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onInputBtn_Click"
+            android:text="Input 4" />
+
+        <Button
+            android:id="@+id/btn_input5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onInputBtn_Click"
+            android:text="Input 5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_input6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onInputBtn_Click"
+            android:text="Input 6" />
+
+        <Button
+            android:id="@+id/btn_input7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onInputBtn_Click"
+            android:text="Input 7" />
+
+        <Button
+            android:id="@+id/btn_input8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onInputBtn_Click"
+            android:text="Input 8" />
+
+        <Button
+            android:id="@+id/btn_input9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onInputBtn_Click"
+            android:text="Input 9" />
+
+        <Button
+            android:id="@+id/btn_input10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onInputBtn_Click"
+            android:text="Input 10" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Output destinations" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <!-- Monitor1 -->
+        <fragment
+            android:id="@+id/fr_monitor1"
+            android:name="com.bluetea.entolidemo.ui.fragment.MonitorFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_monitor" />
+
+        <!-- Monitor2 -->
+        <fragment
+            android:id="@+id/fr_monitor2"
+            android:name="com.bluetea.entolidemo.ui.fragment.MonitorFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            tools:layout="@layout/fragment_monitor" />
+
+        <!-- Monitor3 -->
+        <fragment
+            android:id="@+id/fr_monitor3"
+            android:name="com.bluetea.entolidemo.ui.fragment.MonitorFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            tools:layout="@layout/fragment_monitor" />
+
+        <!-- Monitor4 -->
+        <fragment
+            android:id="@+id/fr_monitor4"
+            android:name="com.bluetea.entolidemo.ui.fragment.MonitorFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            tools:layout="@layout/fragment_monitor" />
+
+        <!-- Monitor5 -->
+        <fragment
+            android:id="@+id/fr_monitor5"
+            android:name="com.bluetea.entolidemo.ui.fragment.MonitorFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            tools:layout="@layout/fragment_monitor" />
+
+        <!--&lt;!&ndash; Monitor1 &ndash;&gt;-->
+        <!--<RelativeLayout android:id="@+id/rl_output1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:padding="4dp"-->
+        <!--android:layout_margin="4dp"-->
+        <!--android:background="@android:color/holo_green_light">-->
+        <!--<TextView android:id="@+id/txt_title1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="Monitor 1"/>-->
+        <!--<RelativeLayout-->
+        <!--android:layout_below="@id/txt_title1"-->
+        <!--android:layout_above="@+id/ll_buttons1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView android:id="@+id/txt_monitor1_main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:gravity="center"-->
+        <!--android:text="C-VIDEO 1"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:background="@android:color/holo_blue_light"/>-->
+        <!--<TextView android:id="@+id/txt_monitor1_sub"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="C-VIDEO 1"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:background="@android:color/darker_gray"/>-->
+        <!--</RelativeLayout>-->
+
+        <!--<LinearLayout android:id="@+id/ll_buttons1"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true">-->
+        <!--<Spinner android:id="@+id/sp_layout1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"></Spinner>-->
+        <!--<Spinner android:id="@+id/sp_monitor1_main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"></Spinner>-->
+        <!--<Spinner android:id="@+id/sp_monitor1_sub"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"></Spinner>-->
+        <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+
+        <!--&lt;!&ndash; Monitor2 &ndash;&gt;-->
+        <!--<RelativeLayout android:id="@+id/rl_output2"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:padding="4dp"-->
+        <!--android:layout_margin="4dp"-->
+        <!--android:background="@android:color/holo_green_light">-->
+        <!--<TextView android:id="@+id/txt_title2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="Monitor 2"/>-->
+        <!--<RelativeLayout-->
+        <!--android:layout_below="@id/txt_title2"-->
+        <!--android:layout_above="@+id/ll_buttons2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView android:id="@+id/txt_monitor2_main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:gravity="center"-->
+        <!--android:text="C-VIDEO 2"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:background="@android:color/holo_blue_light"/>-->
+        <!--<TextView android:id="@+id/txt_monitor2_sub"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="C-VIDEO 2"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:background="@android:color/darker_gray"/>-->
+        <!--</RelativeLayout>-->
+
+        <!--<LinearLayout android:id="@+id/ll_buttons2"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true">-->
+        <!--<Button android:id="@+id/btn_layout2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Layout : PIP(LT)"/>-->
+        <!--<Button android:id="@+id/btn_monitor2_main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Main : C-VIDEO 2"/>-->
+        <!--<Button android:id="@+id/btn_monitor2_sub"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Sub : DVI 2"/>-->
+        <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+
+        <!--&lt;!&ndash; Monitor3 &ndash;&gt;-->
+        <!--<RelativeLayout android:id="@+id/rl_output3"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:padding="4dp"-->
+        <!--android:layout_margin="4dp"-->
+        <!--android:background="@android:color/holo_green_light">-->
+        <!--<TextView android:id="@+id/txt_title3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="Monitor 3"/>-->
+        <!--<RelativeLayout-->
+        <!--android:layout_below="@id/txt_title3"-->
+        <!--android:layout_above="@+id/ll_buttons3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView android:id="@+id/txt_monitor3_main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:gravity="center"-->
+        <!--android:text="C-VIDEO 3"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:background="@android:color/holo_blue_light"/>-->
+        <!--<TextView android:id="@+id/txt_monitor3_sub"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="C-VIDEO 3"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:background="@android:color/darker_gray"/>-->
+        <!--</RelativeLayout>-->
+
+        <!--<LinearLayout android:id="@+id/ll_buttons3"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true">-->
+        <!--<Button android:id="@+id/btn_layout3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Layout : PIP(LT)"/>-->
+        <!--<Button android:id="@+id/btn_monitor3_main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Main : C-VIDEO 3"/>-->
+        <!--<Button android:id="@+id/btn_monitor3_sub"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Sub : DVI 3"/>-->
+        <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+
+        <!--&lt;!&ndash; Monitor4 &ndash;&gt;-->
+        <!--<RelativeLayout android:id="@+id/rl_output4"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:padding="4dp"-->
+        <!--android:layout_margin="4dp"-->
+        <!--android:background="@android:color/holo_green_light">-->
+        <!--<TextView android:id="@+id/txt_title4"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="Monitor 4"/>-->
+        <!--<RelativeLayout-->
+        <!--android:layout_below="@id/txt_title4"-->
+        <!--android:layout_above="@+id/ll_buttons4"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView android:id="@+id/txt_monitor4_main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:gravity="center"-->
+        <!--android:text="C-VIDEO 4"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:background="@android:color/holo_blue_light"/>-->
+        <!--<TextView android:id="@+id/txt_monitor4_sub"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="C-VIDEO 4"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:background="@android:color/darker_gray"/>-->
+        <!--</RelativeLayout>-->
+
+        <!--<LinearLayout android:id="@+id/ll_buttons4"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true">-->
+        <!--<Button android:id="@+id/btn_layout4"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Layout : PIP(LT)"/>-->
+        <!--<Button android:id="@+id/btn_monitor4_main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Main : C-VIDEO 4"/>-->
+        <!--<Button android:id="@+id/btn_monitor4_sub"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Sub : DVI 4"/>-->
+        <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+
+        <!--&lt;!&ndash; Monitor5 &ndash;&gt;-->
+        <!--<RelativeLayout android:id="@+id/rl_output5"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:padding="4dp"-->
+        <!--android:layout_margin="4dp"-->
+        <!--android:background="@android:color/holo_green_light">-->
+        <!--<TextView android:id="@+id/txt_title5"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="Monitor 5"/>-->
+        <!--<RelativeLayout-->
+        <!--android:layout_below="@id/txt_title5"-->
+        <!--android:layout_above="@+id/ll_buttons5"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView android:id="@+id/txt_monitor5_main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:gravity="center"-->
+        <!--android:text="C-VIDEO 5"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:background="@android:color/holo_blue_light"/>-->
+        <!--<TextView android:id="@+id/txt_monitor5_sub"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="C-VIDEO 5"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:background="@android:color/darker_gray"/>-->
+        <!--</RelativeLayout>-->
+
+        <!--<LinearLayout android:id="@+id/ll_buttons5"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true">-->
+        <!--<Button android:id="@+id/btn_layout5"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Layout : PIP(LT)"/>-->
+        <!--<Button android:id="@+id/btn_monitor5_main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Main : C-VIDEO 5"/>-->
+        <!--<Button android:id="@+id/btn_monitor5_sub"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Sub : DVI 5"/>-->
+        <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+    </LinearLayout>
+</LinearLayout>

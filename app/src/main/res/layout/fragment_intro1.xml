@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    tools:context="com.bluetea.entolidemo.ui.fragment.Intros.Intro1Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_intro_1_close"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="36dp"
+            android:text="SKIP INTRO"
+            android:layout_marginBottom="28dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimaryView_blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome! Have a look Around"
+            android:id="@+id/text_intro_1_title"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryView_blue"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Ut varius tincidunt libero. Mauris sollicitudin fermentum libero. Donec id justo. Sed fringilla mauris sit amet nibh. Nam commodo suscipit quam."
+            android:id="@+id/text_intro_1_title_2"
+            android:layout_below="@+id/text_intro_1_title"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Version: 3.3.6"
+            android:id="@+id/text_intro_1_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="120dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/intro_1_imageview"
+            android:layout_alignParentTop="false"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="No:658-689-965-358"
+            android:id="@+id/textView"
+            android:gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/text_intro_1_content"
+            android:layout_above="@+id/tv_intro_1_close"
+            android:textColor="@android:color/darker_gray"/>
+    </RelativeLayout>
+</FrameLayout>

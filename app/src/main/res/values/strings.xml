@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EntoliDemo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_exe_cmd">Executing command</string>
+    <string name="msg_please_wait">Please wait...</string>
+
+</resources>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:id="@+id/relative_container_0001"
+        android:background="@drawable/menu_background">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/home_ic"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/menu_home_btn"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/home_ic"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:textSize="20dp"
+                android:text="Home"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_entoli"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/setting_bt"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/menu_setting_btn"/>
+
+            <ImageView
+                android:id="@+id/menu_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/setting_bt"
+                android:src="@drawable/menu_expand_btn"
+                android:layout_marginLeft="25dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_container_0002"
+        android:layout_below="@+id/relative_container_0001"
+        >
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btView"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1">
+                <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:id="@+id/main_btn1">
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/main_btn1"
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:id="@+id/main_btn2">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/main_btn2"
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:id="@+id/main_btn3">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/main_btn3"
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:id="@+id/main_btn4">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/main_btn4"
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/frameView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_above="@+id/relative_container_0003">
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView3"
+            android:background="#cccccc"
+            android:layout_toRightOf="@+id/btView" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/relative_container_0003"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:layout_centerVertical="true"
+                android:textSize="17dp"
+                android:text="2016 All Rights Reserved - Blue Tea Software Development"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

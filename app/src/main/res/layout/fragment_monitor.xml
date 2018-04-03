@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:layout_margin="4dp"
+    android:background="@android:color/holo_green_light"
+    tools:context=".ui.fragment.MonitorFragment">
+
+    <!-- Monitor -->
+    <TextView android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="Monitor 1"/>
+    <FrameLayout android:id="@+id/fl_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_title"
+        android:layout_above="@+id/ll_buttons">
+        <RelativeLayout android:id="@+id/rl_layout_pip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:id="@+id/txt_monitor_main2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="CVBS 1"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_light"/>
+            <TextView android:id="@+id/txt_monitor_sub2"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="CVBS 1"
+                android:textColor="@android:color/white"
+                android:background="@android:color/darker_gray"/>
+        </RelativeLayout>
+
+        <LinearLayout android:id="@+id/ll_layout_pop"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:id="@+id/txt_monitor_main3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="C-VIDEO 1"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_light"/>
+            <TextView android:id="@+id/txt_monitor_sub3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="CVBS 1"
+                android:textColor="@android:color/white"
+                android:background="@android:color/darker_gray"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/ll_layout_pbp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:id="@+id/txt_monitor_main4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="CVBS 1"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_light"/>
+            <TextView android:id="@+id/txt_monitor_sub4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="CVBS 1"
+                android:textColor="@android:color/white"
+                android:background="@android:color/darker_gray"/>
+        </LinearLayout>
+
+        <RelativeLayout android:id="@+id/rl_layout_single"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:id="@+id/txt_monitor_main1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="CVBS 1"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_light"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout android:id="@+id/ll_buttons"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Layout:"/>
+            <Spinner android:id="@+id/sp_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/ll_pip_parameter"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pip Size:"/>
+                <Spinner android:id="@+id/sp_pip_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pip Position:"/>
+                <Spinner android:id="@+id/sp_pip_position"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Main:"/>
+            <Spinner android:id="@+id/sp_monitor_main"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sub:"/>
+            <Spinner android:id="@+id/sp_monitor_sub"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

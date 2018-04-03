@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bluetea.entolidemo.ui.activity.HelpActivity"
+    android:background="#c2bcbc">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/helper_pager"
+        android:layout_width="600dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="70dp"
+        android:background="#ffffff"
+        android:layout_centerInParent="true"
+        >
+    </android.support.v4.view.ViewPager>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/dot_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="85dp"
+        app:ci_drawable="@color/colorPrimaryView_blue"
+        >
+    </me.relex.circleindicator.CircleIndicator>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016 All Rights Reserved- Blue Tea Software Development"
+        android:id="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="20dp"
+        android:textSize="16dp"/>
+</RelativeLayout>
